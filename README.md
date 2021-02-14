@@ -3,6 +3,7 @@
 Düzenli dinamik tablolar oluşturmak için kullanılır. Regular Table'ı kullanmak için Css ve JavaScipt dosyasını projenize dahil etmeniz gerekir;
 
 Css: `<link rel="stylesheet" href="your-path/regular-table.css" />`
+
 JavaScript: `<script src="your-path/regular-table.js"></script>`
 
 ## Regular Table Hızlı Başlangıç
@@ -22,6 +23,8 @@ const myData = [
 			['Bağan', 'Baturalp', 13]
 		]
 `
+
+## Regular Table Kullanımı
 
 Dataları kullanarak bir tablo oluşturmak için `RegularTable` sınıfından yeni bir instances oluşturuyoruz, `RegularTable` sınıfı constructor metodu içinde zorunlu olarak parent elemanı alıyor.
 Parent eleman olarak oluşturduğumuz `example-table` sınıf ismine sahip div'i yazıyoruz. İkinci paramtre data ve diğer seçenekleri içeren bir obje alıyor. Örnek;
