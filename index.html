@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Regular Table Demo</title>
+	<!-- Include 'regular-teble.css' -->
+	<link rel="stylesheet" href="./regular-table.css" />
+</head>
+
+<body>
+	<div class="example-table-default"></div>
+	<div class="example-table-dark"></div>
+	<div class="example-table-light"></div>
+	<!-- Include 'regular-table.js' -->
+	<script src="./regular-table.js"></script>
+	<script>
+		let myData = [
+			['Ali', 'Mehmet', 13],
+			['Ertuğrul Sencer', 'UZUN', 17],
+			['Mehmet Ali', 'Teken', 15],
+			['Bilgebayunçur', 'Bolatlı', 12],
+			['Bağan', 'Baturalp', 13]
+		];
+
+		const rtDefault = new RegularTable('.example-table-default', {
+			headData: ['Ad', 'Soyad', 'Yaş'],
+			bodyData: myData,
+			theme: 'default',
+			textCase: 'lowercase',
+			collapse: false,
+			rounded: true
+		});
+
+		const rtDark = new RegularTable('.example-table-dark', {
+			headData: ['ID', 'Kullanıcı Adı', 'Tarih'],
+			bodyData: [
+				['1', 'gingerberber13', '12/12/2020'],
+				['2', 'ali_memet', '12/04/2020'],
+				['3', 'sencertugrul', '03/10/2020'],
+				['4', 'bagan_baturalp_34', '20/04/2019']
+			],
+			theme: 'dark',
+			rounded: false
+		});
+		const rtLight = new RegularTable('.example-table-light', {
+			headData: ['ID', 'Kullanıcı Adı', 'Tarih'],
+			bodyData: [
+				['1', 'gingerberber13', '12/12/2020'],
+				['2', 'ali_memet', '12/04/2020'],
+				['3', 'sencertugrul', '03/10/2020'],
+				['4', 'bagan_baturalp_34', '20/04/2019']
+			],
+			theme: 'light',
+			rounded: false
+		});
+	</script>
+</body>
+
+</html>
